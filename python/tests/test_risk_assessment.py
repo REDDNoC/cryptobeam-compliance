@@ -84,6 +84,7 @@ def test_perform_cdd():
         document_type=DocumentType.PASSPORT,
         document_number='P789012',
         issue_date=datetime(2020, 1, 1),
+        expiry_date=datetime(2030, 1, 1),
         issuing_authority='US Government',
         verified=True
     ))
@@ -92,6 +93,7 @@ def test_perform_cdd():
         document_type=DocumentType.UTILITY_BILL,
         document_number='UB123',
         issue_date=datetime(2024, 1, 1),
+        expiry_date=None,
         issuing_authority='Utility Company',
         verified=True
     ))
@@ -121,6 +123,7 @@ def test_perform_edd():
         document_type=DocumentType.PASSPORT,
         document_number='P345678',
         issue_date=datetime(2020, 1, 1),
+        expiry_date=datetime(2030, 1, 1),
         issuing_authority='Government',
         verified=True
     ))
@@ -129,6 +132,7 @@ def test_perform_edd():
         document_type=DocumentType.UTILITY_BILL,
         document_number='UB456',
         issue_date=datetime(2024, 1, 1),
+        expiry_date=None,
         issuing_authority='Utility',
         verified=True
     ))
